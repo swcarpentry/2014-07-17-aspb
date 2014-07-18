@@ -342,7 +342,6 @@ but not yet committed.
 `git add` puts things in this area,
 and `git commit` then copies them to long-term storage:
 
-FIXME: diagram
 
 The following commands show this in action:
 
@@ -562,7 +561,6 @@ Here's where we are right now:
     The two moons may be a problem for Wolfman
     But the Mummy will appreciate the lack of humidity
 
-FIXME: diagram
 
 Let's run this command:
 
@@ -576,7 +574,6 @@ it has created a new [branch](glossary.html#branch) called `moons`:
     * master
       moons
 
-FIXME: diagram
 
 Git is now maintaining two named bookmarks in our history:
 `master`,
@@ -648,7 +645,6 @@ Let's add and commit those changes
 
 Our repository is now in the state shown below:
 
-FIXME: diagram
 
 The `moons` branch has advanced to record the changes we just made,
 but `master` is still where it was.
@@ -691,7 +687,6 @@ to further illustrate this point:
 
 Our repository is now in the state shown below:
 
-FIXME: diagram
 
 Both `master` and `moons` have moved on from their original common state.
 They could continue independent existence indefinitely,
@@ -739,7 +734,6 @@ We now have all of our changes in one place:
 
 and our repository looks like this:
 
-FIXME: diagram
 
 We can visualize the history with this set of arguments to `git log`:
 
@@ -798,25 +792,20 @@ we would
 1. create a branch called something like `better-spatial-correlation`
    for those changes:
 
-FIXME: diagram
 
 2. go back to master and create another branch called `file-input-produces-complex-values`
    for *those* changes:
 
-FIXME: diagram
 
 3. merge `file-input-produces-complex-values` into `master`:
 
-FIXME: diagram
 
 4. merge `master` into `better-spatial-correlation`:
 
-FIXME: diagram
 
 5. and then finish work on the spatial correlation function
    and merge it all back into `master`:
 
-FIXME: diagram
 
 And if,
 partway through this process,
@@ -857,7 +846,6 @@ Let's add a line to the version of `moons.txt` in the `master` branch:
     [master 5ae9631] Adding a line in the master branch
      1 file changed, 1 insertion(+)
 
-FIXME: diagram
 
 Now let's switch to the `moons` branch and make a different change there:
 
@@ -873,7 +861,6 @@ Now let's switch to the `moons` branch and make a different change there:
 
 Our repository now looks like this:
 
-FIXME: diagram
 
 Let's pull all the changes made in `master` into the `moons` branch:
 
@@ -952,7 +939,6 @@ and then commit:
 
 Our repository now looks like this:
 
-FIXME: diagram
 
 Git tries hard to keep track of what we've merged with what,
 so if we switch back to `master` and merge the changes in `moons`,
@@ -1002,7 +988,6 @@ Log in to GitHub,
 then create a new repository called `planets`
 using their GUI:
 
-FIXME: screenshot
 
 This effectively does the following on GitHub's servers:
 
@@ -1012,7 +997,6 @@ This effectively does the following on GitHub's servers:
 
 We're now in the situation shown in the figure below:
 
-FIXME: diagram
 
 Our local repository still has two branches called `master` and `moons`,
 with the same contents as before.
@@ -1026,7 +1010,6 @@ for the local repository.
 The home page of the repository on GitHub includes
 the string we need to identify it:
 
-FIXME: screenshot
 
 For now,
 we'll use the 'http' identifier,
@@ -1065,7 +1048,6 @@ except it moved changes between repositories
 rather than just between branches.
 Our local and remote repositories are now in this state:
 
-FIXME: diagram
 
 We can pull changes from the remote repository to the local one as well:
 
@@ -1080,7 +1062,6 @@ If someone else had pushed some changes,
 though,
 this command would download them to our local repository:
 
-FIXME: diagram
 
 The model shown above,
 in which everyone pushes and pulls from a single repository,
@@ -1128,13 +1109,11 @@ i.e.,
 clones it on GitHub.
 He does this using the GitHub web interface:
 
-FIXME: screenshot
 
 He then clones his GitHub repository,
 not Dracula's,
 to give himself a desktop copy:
 
-FIXME: diagram
 
 This may seem like unnecessary work,
 but it allows Wolfman and Dracula to collaborate much more effectively.
@@ -1142,19 +1121,16 @@ Suppose Wolfman makes a change to the project.
 He commits it to his local repository,
 then uses `git push` to copy those changes to GitHub:
 
-FIXME: diagram
 
 He then creates a [pull request](glossary.html#pull_request),
 which notifies Dracula that Wolfman wants to merge some changes
 into Dracula's repository:
 
-FIXME: screenshot
 
 A pull request is a merge waiting to happen.
 When Dracula views it online,
 he can see and comment on the changes Wolfman wants to make:
 
-FIXME: screenshot
 
 Commenting is the crucial step here,
 and half the reason Wolfman went to the trouble of forking the repository on GitHub.
@@ -1170,7 +1146,6 @@ commit locally,
 and push those changes to GitHub
 to update the pull request:
 
-FIXME: diagram
 
 This process is exactly like peer review of papers,
 though usually much faster.
@@ -1187,7 +1162,6 @@ he creates a new branch in his local repository,
 pushes it to GitHub,
 and then issues a pull request from that:
 
-FIXME: diagram
 
 We can now see why Git, Mercurial, and other modern version control systems
 use branching so much:
