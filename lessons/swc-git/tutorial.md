@@ -42,60 +42,6 @@ No matter which system you use,
 the most important thing to learn is not the details of their more obscure commands,
 but the workflow that they encourage.
 
-## For Instructors
-
-Version control is the most important practical skill we introduce.
-Provided there aren't network problems,
-each half of the lesson can be covered in about an hour,
-but don't rush:
-as the last paragraph of the introduction above says,
-the workflow matters more than the ins and outs of any particular tool.
-By the end,
-the instructor should be able to get learners to chant,
-"Branch, edit, commit, merge" in unison,
-and have them understand what those terms mean
-and why that's a good way to structure their working day.
-
-Here's some guidance for teaching this material:
-
-- Make sure the network is working <em>before</em> starting this lesson.
-- Give learners a ten-minute overview of what version control does for them
-  before diving into the watch-and-do practicals.
-  Most of them will have tried to co-author papers by emailing files back and forth
-  (or in more recent years using cloud storage with file synchronization,
-  e.g. Dropbox, Google Drive, ...),
-  or will have biked into the office
-  only to realize that the USB key with last night's work
-  is still on the kitchen table.
-  Instructors can also make jokes about directories with names like
-  "final version",
-  "final version revised",
-  "final version with reviewer three's corrections",
-  "really final version",
-  and,
-  "come on this really has to be the last version"
-  to motivate version control as a better way to collaborate
-  and as a better way to back work up.
-- Version control is typically taught after the shell,
-  so collect learners' names during that session
-  and create a repository for them to share
-  with their names as both their IDs and their passwords.
-  The easiest way to create the repository is to use GitHub;
-  if they don't already understand SSH,
-  stick to using the HTTP protocol for everything.
-- Be very clear what files learners are to edit
-  and what user IDs they are to use
-  when giving instructions.
-  It is common for them to edit the instructor's biography,
-  or to use the instructor's user ID and password when committing.
-  Be equally clear *when* they are to edit things:
-  it's also common for someone to edit the file the instructor is editing
-  and commit changes while the instructor is explaining what's going on,
-  so that a conflict occurs when the instructor comes to commit the file.
-- Learners could do most exercises with repositories on their own machines,
-  but it's hard for them to see how version control helps collaboration
-  unless they're sharing a repository with other learners.
-
 ## Prerequisites
 
 Basic shell concepts and skills (`ls`, `cd`, `mkdir`, editing files).
